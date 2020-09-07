@@ -24,8 +24,6 @@ export const Scene = () => {
         Leaf(ctx, { x, y }, "#22443e", r);
 
         const newAngle = perl * 2 * Math.PI;
-        console.log(Math.cos(newAngle));
-        console.log(Math.sin(newAngle));
 
         x += Math.abs(Math.cos(newAngle) * RandomNumber(5, 8)) * Direction;
         y += Math.sin(newAngle) * RandomNumber(1, 5);
@@ -41,8 +39,6 @@ export const Scene = () => {
         Leaf(ctx, { x, y }, "#298657", r);
 
         const newAngle = perl * 2 * Math.PI;
-        console.log(Math.cos(newAngle));
-        console.log(Math.sin(newAngle));
 
         x += Math.abs(Math.cos(newAngle) * RandomNumber(8, 10)) * Direction;
         y += Math.sin(newAngle) * RandomNumber(1, 5);
@@ -58,8 +54,6 @@ export const Scene = () => {
         Leaf(ctx, { x, y }, "#57a48d", r);
 
         const newAngle = perl * 2 * Math.PI;
-        console.log(Math.cos(newAngle));
-        console.log(Math.sin(newAngle));
 
         x += Math.abs(Math.cos(newAngle) * RandomNumber(10, 15)) * Direction;
         y += Math.sin(newAngle) * RandomNumber(1, 5);
