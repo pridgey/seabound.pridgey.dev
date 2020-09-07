@@ -44,6 +44,7 @@ const ConstructCurve = (
 export const Leaf = (
   ctx: CanvasRenderingContext2D,
   point: CanvasPoint,
+  color: string,
   rotation?: number
 ) => {
   // Creates a new Leaf
@@ -55,26 +56,25 @@ export const Leaf = (
   ConstructCurve(ctx, rotation || 0, sizeOfLeaf, point, true);
 
   // Fill in
-  const randomColor = RandomNumber(0, 4);
-  let color = "#1b4831";
-  switch (randomColor) {
-    case 0:
-    default:
-      color = "#6dad85";
-      break;
-    case 1:
-      color = "#298657";
-      break;
-    case 2:
-      color = "#57a48d";
-      break;
-    case 3:
-      color = "#4c8651";
-      break;
-    case 4:
-      color = "#22443e";
-      break;
-  }
+  // const randomColor = RandomNumber(0, 4);
+  // switch (randomColor) {
+  //   case 0:
+  //   default:
+  //     color = "#6dad85";
+  //     break;
+  //   case 1:
+  //     color = "#298657";
+  //     break;
+  //   case 2:
+  //     color = "#57a48d";
+  //     break;
+  //   case 3:
+  //     color = "#4c8651";
+  //     break;
+  //   case 4:
+  //     color = "#22443e";
+  //     break;
+  // }
 
   ctx.fillStyle = color;
   ctx.strokeStyle = color;
